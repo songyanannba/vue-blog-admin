@@ -5,7 +5,7 @@ import router from './router/index.js'
 import './assets/css/theme.css'
 import './assets/css/antdv.css' //背景css
 import './assets/css/public.css'
-import iconfont from './assets/css/iconfont.css'
+import './assets/css/iconfont.css'
 
 
 import Antd from 'ant-design-vue';
