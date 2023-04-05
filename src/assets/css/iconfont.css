@@ -1,0 +1,7 @@
+.icon-tuichuquanping::before {
+    content:"\e8fa";
+}
+
+.icon-quanping:before {
+    content: "\e11";
+}
