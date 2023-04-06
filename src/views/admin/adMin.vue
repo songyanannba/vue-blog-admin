@@ -22,7 +22,7 @@
                         <BFullScreen></BFullScreen>
                     </div>
 
-                    <BUserInfo></BUserInfo>
+                    <BUserInfo :is-avatar = true></BUserInfo>
                 </div>
 
             </header>

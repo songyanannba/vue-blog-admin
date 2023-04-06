@@ -1,6 +1,6 @@
 <template>
-    <div class="b_user_info">
-        <div class="avatar">
+    <div class="b_user_info" >
+        <div class="avatar" v-if="props.isAvatar">
             <img src="http://img1.gtimg.com/sports/pics/hv1/187/120/2314/150498637.png" alt="">
         </div>
 
@@ -34,6 +34,17 @@
 
 import { useRouter } from 'vue-router';
 const router = useRouter()
+
+
+//控制头像是否显示
+const props = defineProps({
+    isAvatar:{
+        type:Boolean,
+        default:false,
+    }
+})
+
+
 
 function menuClick({ key }) {
     console.log(key)
