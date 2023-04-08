@@ -67423,8 +67423,8 @@ ul.anticons-list li.copied:after {
 .dark menu,
 .dark nav,
 .dark section {
-    margin: 0;
-    padding: 0
+    /* margin: 0;
+    padding: 0 */
 }
 
 .dark ul,

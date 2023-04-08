@@ -27,7 +27,7 @@
                 </template>
             </a-dropdown>
         </div>
-    </div>
+    </div> 
 </template>
 
 <script setup>
@@ -43,7 +43,6 @@ const props = defineProps({
         default:false,
     }
 })
-
 
 
 function menuClick({ key }) {

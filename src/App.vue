@@ -17,7 +17,7 @@ export default {
 
 
 <style lang="scss">
-* {
+* { 
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -26,6 +26,7 @@ export default {
 :root {
   --active: #2180fc; 
   --text:#555;
+
 }
 
 //font-awesome

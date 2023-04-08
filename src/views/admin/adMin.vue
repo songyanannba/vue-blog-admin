@@ -22,14 +22,21 @@
                         <BFullScreen></BFullScreen>
                     </div>
 
-                    <BUserInfo :is-avatar = true></BUserInfo>
+                    <BUserInfo :is-avatar=true></BUserInfo>
                 </div>
 
             </header>
 
             <div class="tabs">
             </div>
-            <main> </main>
+            <main>
+                <div class="b_view">
+
+                    <!-- 首页 -->
+                    <RouterView></RouterView>
+                </div>
+
+            </main>
         </div>
 
     </div>
@@ -41,17 +48,7 @@
 import BTheme from '../../components/admin/b_theme.vue'
 import BAside from '../../components/admin/b_aside.vue'
 import BFullScreen from '../../components/admin/b_full_screen.vue'
-
 import BUserInfo from '../../components/admin/b_user_info.vue'
-
-
-
-
-
-
-
-
-
 
 
 </script>
@@ -117,14 +114,23 @@ import BUserInfo from '../../components/admin/b_user_info.vue'
 
     .tabs {
         height: 30px;
-        //border: 1px solid #f0eeee;
-        border: 1px solid var(--order);
+        border: 1px;
+        border-color: var(--order);
+        border-style: solid;
+
+
+        border-width: 1px 0 1px 0;
+
     }
 
     main {
-        //background-color: var(--ant-info-color-deprecated-bg) ;
+        padding: 20px;
         background-color: var(-bg);
         height: calc(100vh - 90px);
+
+        .b_view {
+            background-color: white;
+        }
     }
 }
 </style>
