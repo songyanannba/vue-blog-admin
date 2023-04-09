@@ -1,5 +1,5 @@
 <template>
-    <!-- openKeys="openKeys"  -->
+    <!-- openKeys="openKeys"  theme="dark"-->
     <a-menu v-model:selectedKeys="selectedKeys" mode="inline" theme="dark" style="width: 230px" :inline-collapsed="false" @click="goto" >
 
         <template v-for="menu in data.menuList" :key="menu.name">
@@ -120,5 +120,17 @@ const data = reactive({
 })
 
 
-
 </script>
+
+<style lang="scss">
+
+// .ant-menu {
+//     background-color: transparent;
+//     color: white;
+// }
+
+// .ant-menu-submenu-arrow {
+//     color: white;
+// }
+
+</style>
